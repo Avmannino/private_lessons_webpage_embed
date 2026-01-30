@@ -62,7 +62,7 @@ export default function App() {
             <div className="sectionHeader">
               <h2 className="sectionTitle">Choose your track</h2>
               <p className="sectionSub">
-                Both options use the same booking email — just tell us what you’re looking for.
+                Both options use the same booking email — just let us know what you’re looking for.
               </p>
 
               {/* Red connector brackets (desktop only via CSS) */}
@@ -81,7 +81,7 @@ export default function App() {
                 </div>
 
                 <div className="miniBlock">
-                  <p className="miniLabel">When</p>
+                  <p className="miniLabel">When?</p>
                   <p className="miniText">
                     <strong>Thursdays • 6:30am–7:30am</strong>
                     <br />
@@ -107,19 +107,19 @@ export default function App() {
                 </div>
 
                 <div className="miniBlock">
-                  <p className="miniLabel">When</p>
+                  <p className="miniLabel">When?</p>
                   <p className="miniText">
-                    <strong>During our general skates</strong>
+                    <strong>During our Public Skates</strong>
                   </p>
 
-                  {/* ✅ NEW: Button to schedule page */}
+                  {/* ✅ Button to schedule page */}
                   <a
                     className="btn btnOutline btnCalendar"
                     href={SCHEDULE_URL}
                     target="_top"
                     rel="noopener noreferrer"
                   >
-                    View General Skate Schedule
+                    View Public Skate Schedule
                   </a>
                 </div>
 

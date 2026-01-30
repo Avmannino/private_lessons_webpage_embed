@@ -148,15 +148,15 @@ export default function App() {
               >
                 Email {CONTACT_EMAIL}
               </a>
+
+              {/* ✅ Footer moved INSIDE the Ready to get started container */}
+              <footer className="siteFooter">
+                © {new Date().getFullYear()} Wings Arena. All rights reserved.
+              </footer>
             </div>
           </section>
         </div>
       </main>
-
-      {/* ✅ Footer is OUTSIDE bottom CTA and sticks to bottom */}
-      <footer className="siteFooter">
-        © {new Date().getFullYear()} Wings Arena. All rights reserved.
-      </footer>
     </div>
   );
 }

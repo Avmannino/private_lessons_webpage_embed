@@ -413,13 +413,15 @@ a {
   max-width: 56ch;
 }
 
-/* ✅ Footer: remove the negative margin so it never overlaps */
+/* ✅ Footer is now INSIDE the bottom CTA */
 .siteFooter {
   text-align: center;
   color: rgba(255, 255, 255, 0.55);
   font-size: 12px;
-  padding: 16px 0 18px;
-  margin-top: -50px;
+  padding-top: 16px;
+  margin-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+  width: 100%;
 }
 
 /* ===========================

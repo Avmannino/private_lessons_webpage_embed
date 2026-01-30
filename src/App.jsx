@@ -3,6 +3,9 @@ import "./App.css";
 
 const CONTACT_EMAIL = "info@wingsarena.com";
 
+// ✅ Wix-safe schedule page link (no anchors needed)
+const SCHEDULE_URL = "https://www.wingsarena.com/schedule";
+
 export default function App() {
   return (
     <div className="page">
@@ -108,6 +111,16 @@ export default function App() {
                   <p className="miniText">
                     <strong>During our general skates</strong>
                   </p>
+
+                  {/* ✅ NEW: Button to schedule page */}
+                  <a
+                    className="btn btnOutline btnCalendar"
+                    href={SCHEDULE_URL}
+                    target="_top"
+                    rel="noopener noreferrer"
+                  >
+                    View General Skate Schedule
+                  </a>
                 </div>
 
                 <ul className="miniList" aria-label="Ice skating focus areas">

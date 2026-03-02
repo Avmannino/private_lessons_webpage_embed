@@ -6,6 +6,10 @@ const CONTACT_EMAIL = "info@wingsarena.com";
 // ✅ Wix-safe schedule page link (no anchors needed)
 const SCHEDULE_URL = "https://www.wingsarena.com/schedule";
 
+// ✅ Guest Coaches signup link
+const GUEST_COACHES_SIGNUP_URL =
+  "https://www.signupgenius.com/go/10C0548AEAF2FAAFCCE9-62694396-wings#/";
+
 export default function App() {
   return (
     <div className="page">
@@ -82,12 +86,41 @@ export default function App() {
 
                 <div className="miniBlock">
                   <p className="miniLabel">When?</p>
+
                   <p className="miniText">
-                    <strong>Thursdays • 6:30am–7:30am</strong>
-                    <br />
-                    Through <strong>end of February 2026</strong>
+                    <strong>Spring Availability</strong>
                   </p>
-                  <div className="note">Spring schedule availability will be posted soon.</div>
+
+                  <ul
+                    className="miniList"
+                    aria-label="Spring hockey private lesson availability"
+                    style={{ marginTop: "0.5rem" }}
+                  >
+                    <li>
+                      <strong>Mon, Wed, Thurs, Fri</strong> — 6:15am - 7:15am
+                    </li>
+                    <li>
+                      <strong>Mondays</strong> — 2:30pm - 3:30pm
+                    </li>
+                    <li>
+                      <strong>Thursdays</strong> — 3:40pm - 4:40pm
+                    </li>
+                  </ul>
+
+                  <div className="note" style={{ marginTop: "0.75rem" }}>
+                    Guest coaches can sign up using the link below.
+                  </div>
+
+                  <a
+                    className="btn btnOutline btnCalendar"
+                    href={GUEST_COACHES_SIGNUP_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Guest Coaches Sign Up Here"
+                    style={{ marginTop: "0.5rem" }}
+                  >
+                    Guest Coaches Sign Up Here
+                  </a>
                 </div>
 
                 <ul className="miniList" aria-label="Hockey focus areas">
@@ -106,13 +139,13 @@ export default function App() {
                   <p className="optionSub">Comfort on the ice, fundamentals, confidence.</p>
                 </div>
 
-                <div className="miniBlock">
+                {/* ✅ Keep red box, but use a tighter variant class */}
+                <div className="miniBlock miniBlockTight">
                   <p className="miniLabel">When?</p>
                   <p className="miniText">
                     <strong>During our Public Skates</strong>
                   </p>
 
-                  {/* ✅ Button to schedule page */}
                   <a
                     className="btn btnOutline btnCalendar"
                     href={SCHEDULE_URL}
@@ -149,7 +182,6 @@ export default function App() {
                 Email {CONTACT_EMAIL}
               </a>
 
-              {/* ✅ Footer moved INSIDE the Ready to get started container */}
               <footer className="siteFooter">
                 © {new Date().getFullYear()} Wings Arena. All rights reserved.
               </footer>

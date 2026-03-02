@@ -362,6 +362,35 @@ a {
   margin-top: auto;
 }
 
+/* ✅ Tighter version for the Ice Skating red "WHEN?" box */
+.miniBlockTight {
+  flex: 0 0 auto !important; /* ✅ don't stretch AND don't collapse */
+  min-height: unset !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; /* keeps label/text/button centered cleanly */
+  gap: 8px;
+  padding: 14px;
+}
+
+/* ✅ Prevent inherited auto-push behavior from base .miniBlock */
+.miniBlockTight > *:last-child {
+  margin-top: 0 !important;
+}
+
+/* ✅ Better spacing between text and button */
+.miniBlockTight .miniText {
+  margin: 0 0 10px 0;
+}
+
+/* ✅ Tight, predictable button spacing in right box */
+.miniBlockTight .btnCalendar {
+  margin-top: 0 !important;
+  width: 100%;
+  max-width: 420px;
+}
+
 .note {
   padding: 10px 12px;
   border-radius: 12px;

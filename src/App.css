@@ -442,6 +442,15 @@ a {
   max-width: 56ch;
 }
 
+.bottomNote {
+  margin: 2px 0 0;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.55;
+  max-width: 98ch;
+  font-size: 15px;
+  font-weight: 700;
+}
+
 /* ✅ Footer is now INSIDE the bottom CTA */
 .siteFooter {
   text-align: center;
@@ -530,9 +539,15 @@ a {
   /* Buttons full width on mobile */
   .btn {
     width: 85%;
+    margin-top: 15px;
   }
 
   .btnCalendar {
     max-width: none;
+  }
+
+  .bottomNote {
+    font-size: 13px;
+    margin-top: 20px;
   }
 }

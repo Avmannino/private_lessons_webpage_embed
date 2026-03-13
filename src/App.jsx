@@ -1,4 +1,3 @@
-// src/App.jsx
 import "./App.css";
 
 const CONTACT_EMAIL = "info@wingsarena.com";
@@ -117,7 +116,6 @@ export default function App() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Guest Coaches Sign Up Here"
-                    style={{ marginTop: "0.5rem" }}
                   >
                     Guest Coaches Sign Up Here
                   </a>
@@ -139,12 +137,15 @@ export default function App() {
                   <p className="optionSub">Comfort on the ice, fundamentals, confidence.</p>
                 </div>
 
-                {/* ✅ Keep red box, but use a tighter variant class */}
-                <div className="miniBlock miniBlockTight">
+                <div className="miniBlock">
                   <p className="miniLabel">When?</p>
                   <p className="miniText">
                     <strong>During our Public Skates</strong>
                   </p>
+
+                  <div className="note" style={{ marginTop: "0.75rem" }}>
+                    View our public skate schedule using the link below.
+                  </div>
 
                   <a
                     className="btn btnOutline btnCalendar"
@@ -181,6 +182,12 @@ export default function App() {
               >
                 Email {CONTACT_EMAIL}
               </a>
+
+              <p className="bottomNote">
+                NOTE: A $25 charge applies to each coach and each lesson participant for every
+                private lesson at Wings Arena. These charges are separate from, and not included in
+                the lesson cost. Please check in at the front desk upon arrival.
+              </p>
 
               <footer className="siteFooter">
                 © {new Date().getFullYear()} Wings Arena. All rights reserved.

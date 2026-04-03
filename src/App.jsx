@@ -9,6 +9,9 @@ const SCHEDULE_URL = "https://www.wingsarena.com/schedule";
 const GUEST_COACHES_SIGNUP_URL =
   "https://www.signupgenius.com/go/10C0548AEAF2FAAFCCE9-62694396-wings#/";
 
+// ✅ Required documents
+const VOLUNTEER_WAIVER_URL = `${import.meta.env.BASE_URL}documents/volunteer-waiver.pdf`;
+
 export default function App() {
   return (
     <div className="page">
@@ -165,6 +168,35 @@ export default function App() {
 
                 <div className="cardCtas"></div>
               </article>
+            </div>
+          </section>
+
+          {/* REQUIREMENTS CARD */}
+          <section className="requirementsCard" aria-label="Guest coach and volunteer requirements">
+            <div className="requirementsInner">
+              <h2 className="bottomTitle">Guest Coach &amp; Volunteer Requirements</h2>
+
+              <div className="requirementItem">
+                <p className="requirementText">
+                  All <strong>Guest Coaches</strong> must provide a{" "}
+                  <strong>Certificate of Insurance</strong> upon arrival for our records.
+                </p>
+              </div>
+
+              <div className="requirementItem">
+                <p className="requirementText">
+                  Any <strong>parents or volunteers</strong> who plan to step on the ice during a
+                  lesson must complete the volunteer waiver linked below.
+                </p>
+                <a
+                  className="btn btnOutline btnCalendar"
+                  href={VOLUNTEER_WAIVER_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Complete Volunteer Waiver
+                </a>
+              </div>
             </div>
           </section>
 

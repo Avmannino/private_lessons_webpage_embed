@@ -216,8 +216,7 @@ export default function App() {
               </a>
 
               <p className="bottomNote">
-                NOTE: A $25 charge applies to each coach and each lesson participant for every
-                private lesson at Wings Arena. These charges are separate from, and not included in
+                NOTE: A $25 charge per skater and $10 charge per coach applies to each private lesson. These charges are separate from, and not included in
                 the lesson cost. Please check in at the front desk upon arrival.
               </p>
 

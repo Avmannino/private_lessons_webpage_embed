@@ -90,24 +90,22 @@ export default function App() {
                   <p className="miniLabel">When?</p>
 
                   <p className="miniText">
-                    <strong>Spring Availability</strong>
+                    <strong>Summer Availability</strong>
                   </p>
 
-                  <ul
-                    className="miniList"
-                    aria-label="Spring hockey private lesson availability"
-                    style={{ marginTop: "0.5rem" }}
+                  <p className="miniText" style={{ marginTop: "0.5rem" }}>
+                    To view available Private Lesson times, please click the button below to view our schedule.
+                  </p>
+
+                  <a
+                    className="btn btnOutline btnCalendar"
+                    href={SCHEDULE_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View Schedule"
                   >
-                    <li>
-                      <strong>Mon, Wed, Thurs, Fri</strong> — 6:15am - 7:15am
-                    </li>
-                    <li>
-                      <strong>Mondays</strong> — 2:30pm - 3:30pm
-                    </li>
-                    <li>
-                      <strong>Thursdays</strong> — 3:40pm - 4:40pm
-                    </li>
-                  </ul>
+                    View Schedule
+                  </a>
 
                   <div className="note" style={{ marginTop: "0.75rem" }}>
                     Guest coaches can sign up using the link below.
@@ -146,7 +144,7 @@ export default function App() {
                     <strong>During our Public Skates</strong>
                   </p>
 
-                  <div className="note" style={{ marginTop: "0.75rem" }}>
+                  <div className="note" style={{ marginTop: "calc(0.75rem + 20px)" }}>
                     View our public skate schedule using the link below.
                   </div>
 
@@ -155,6 +153,7 @@ export default function App() {
                     href={SCHEDULE_URL}
                     target="_top"
                     rel="noopener noreferrer"
+                    style={{ marginTop: "2px" }}
                   >
                     View Public Skate Schedule
                   </a>

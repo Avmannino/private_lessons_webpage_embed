@@ -5,10 +5,6 @@ const CONTACT_EMAIL = "info@wingsarena.com";
 // ✅ Wix-safe schedule page link (no anchors needed)
 const SCHEDULE_URL = "https://www.wingsarena.com/schedule";
 
-// ✅ Guest Coaches signup link
-const GUEST_COACHES_SIGNUP_URL =
-  "https://www.signupgenius.com/go/10C0548AEAF2FAAFCCE9-62694396-wings#/";
-
 // ✅ Required documents
 const VOLUNTEER_WAIVER_URL = `${import.meta.env.BASE_URL}documents/volunteer-waiver.pdf`;
 
@@ -93,7 +89,7 @@ export default function App() {
                     <strong>Summer Availability</strong>
                   </p>
 
-                  <p className="miniText" style={{ marginTop: "0.5rem" }}>
+                  <p className="miniText">
                     To view available Private Lesson times, please click the button below to view our schedule.
                   </p>
 
@@ -105,20 +101,6 @@ export default function App() {
                     aria-label="View Schedule"
                   >
                     View Schedule
-                  </a>
-
-                  <div className="note" style={{ marginTop: "0.75rem" }}>
-                    Guest coaches can sign up using the link below.
-                  </div>
-
-                  <a
-                    className="btn btnOutline btnCalendar"
-                    href={GUEST_COACHES_SIGNUP_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Guest Coaches Sign Up Here"
-                  >
-                    Guest Coaches Sign Up Here
                   </a>
                 </div>
 
@@ -144,7 +126,7 @@ export default function App() {
                     <strong>During our Public Skates</strong>
                   </p>
 
-                  <div className="note" style={{ marginTop: "calc(0.75rem + 20px)" }}>
+                  <div className="note">
                     View our public skate schedule using the link below.
                   </div>
 
@@ -153,7 +135,6 @@ export default function App() {
                     href={SCHEDULE_URL}
                     target="_top"
                     rel="noopener noreferrer"
-                    style={{ marginTop: "2px" }}
                   >
                     View Public Skate Schedule
                   </a>

@@ -170,7 +170,7 @@ a {
 
 /* ✅ Keep the schedule button from smashing into other elements */
 .btnCalendar {
-  margin-top: 12px;
+  margin-top: 6px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -357,9 +357,9 @@ a {
   line-height: 1.5;
 }
 
-/* ✅ keeps extra space (from equal-height miniBlock) at the bottom, not between items */
+/* ✅ keeps extra space (from equal-height miniBlock) at the bottom, not above the button */
 .miniBlock > *:last-child {
-  margin-top: auto;
+  margin-top: 0;
 }
 
 /* ✅ Tighter version for the Ice Skating red "WHEN?" box */
@@ -392,7 +392,7 @@ a {
 }
 
 .note {
-  padding: 10px 12px;
+  padding: 2px 12px;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 650;
   line-height: 1.45;

@@ -172,7 +172,7 @@ export default function App() {
           {/* REQUIREMENTS CARD */}
           <section className="requirementsCard" aria-label="Guest coach and volunteer requirements">
             <div className="requirementsInner">
-              <h2 className="bottomTitle">Guest Coach &amp; Volunteer Requirements</h2>
+              <h2 className="bottomTitle requirementsTitle">Guest Coach &amp; Volunteer Requirements</h2>
 
               <div className="requirementItem requirementAlert">
                 <span className="requiredBadge">Required</span>

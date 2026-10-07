@@ -40,21 +40,6 @@ export default function App() {
 
       <main className="main">
         <div className="container">
-          {/* ZONE RESERVATION ALERT */}
-          <a
-            className="zoneBanner"
-            href={ZONE_SIGNUP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className="requiredBadge">Coaches</span>
-            <span className="zoneBannerText">
-              Every private lesson requires a <strong>reserved zone</strong> of ice. Book yours
-              before you arrive.
-            </span>
-            <span className="zoneBannerCta">Reserve Your Zone →</span>
-          </a>
-
           {/* QUICK INFO */}
           <section className="infoGrid" aria-label="Private lessons overview">
             <article className="infoCard">

@@ -164,7 +164,7 @@ export default function App() {
                   All <strong>coaches</strong> must sign up for a <strong>"zone"</strong> (section of
                   ice) for their private lesson ice slot.
                 </p>
-                <p className="requirementText">Sign up for a zone here:</p>
+                <p className="requirementText">Reserve your zone here:</p>
                 <a
                   className="btn btnOutline btnCalendar"
                   href={ZONE_SIGNUP_URL}

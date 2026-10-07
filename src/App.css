@@ -194,6 +194,11 @@ a {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 18px;
+
+  /* ✅ vertically center content when cards stretch to row height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .cardTitle {

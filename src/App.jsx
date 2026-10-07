@@ -183,14 +183,14 @@ export default function App() {
                 </p>
                 <p className="requirementText">Reserve your zone here:</p>
                 <a
-                  className="btn btnPrimary btnCalendar btnPulse btnStacked"
+                  className="btn btnPrimary btnCalendar btnPulse"
                   href={ZONE_SIGNUP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span>Reserve Your Zone</span>
-                  <span className="btnSubtext">SignUpGenius</span>
+                  Reserve Your Zone
                 </a>
+                <p className="requirementCaption">SignUpGenius</p>
               </div>
 
               <div className="requirementItem">

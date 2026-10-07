@@ -2,6 +2,9 @@ import "./App.css";
 
 const CONTACT_EMAIL = "info@wingsarena.com";
 
+// ✅ Guest coach approval / COI submissions
+const APPROVAL_EMAIL = "mlopez@wingsarena.com";
+
 // ✅ Wix-safe schedule page link (no anchors needed)
 const SCHEDULE_URL = "https://www.wingsarena.com/schedule";
 
@@ -158,6 +161,15 @@ export default function App() {
               <div className="requirementItem requirementAlert">
                 <span className="requiredBadge">Required</span>
                 <p className="requirementAlertTitle"><u>Coaches</u>: Reserve Your Zone Before You Arrive</p>
+                <p className="requirementText">
+                  Before signing up for their first private lesson at Wings Arena, all guest coaches
+                  must receive <strong>approval</strong>, submit a{" "}
+                  <strong>Certificate of Insurance (COI)</strong>, and provide a{" "}
+                  <strong>credit card</strong> to keep on file for coaching and player charges. This
+                  setup is required only before the first booking. To request approval, please email
+                  your COI and approval request to{" "}
+                  <a href={`mailto:${APPROVAL_EMAIL}`}>{APPROVAL_EMAIL}</a>.
+                </p>
                 <p className="requirementText">
                   All <strong>coaches</strong> must sign up for a <strong>"zone"</strong> (section of
                   ice) for their private lesson ice slot.

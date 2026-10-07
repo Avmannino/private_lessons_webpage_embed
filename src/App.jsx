@@ -176,7 +176,7 @@ export default function App() {
 
               <div className="requirementItem requirementAlert">
                 <span className="requiredBadge">Required</span>
-                <p className="requirementAlertTitle">Coaches: Reserve Your Zone Before You Arrive</p>
+                <p className="requirementAlertTitle"><u>Coaches</u>: Reserve Your Zone Before You Arrive</p>
                 <p className="requirementText">
                   All <strong>coaches</strong> must sign up for a <strong>"zone"</strong> (section of
                   ice) for their private lesson ice slot.

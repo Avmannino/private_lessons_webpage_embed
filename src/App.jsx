@@ -171,7 +171,7 @@ export default function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Sign Up for a Zone
+                  Reserve Your Zone
                 </a>
               </div>
 

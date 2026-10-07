@@ -188,13 +188,6 @@ export default function App() {
 
               <div className="requirementItem">
                 <p className="requirementText">
-                  All <strong>Guest Coaches</strong> must provide a{" "}
-                  <strong>Certificate of Insurance</strong> upon arrival for our records.
-                </p>
-              </div>
-
-              <div className="requirementItem">
-                <p className="requirementText">
                   Any <strong>parents or volunteers</strong> who plan to step on the ice during a
                   lesson must complete the volunteer waiver linked below.
                 </p>

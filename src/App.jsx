@@ -104,10 +104,6 @@ export default function App() {
                   <p className="miniLabel">When?</p>
 
                   <p className="miniText">
-                    <strong>Summer Availability</strong>
-                  </p>
-
-                  <p className="miniText">
                     To view available Private Lesson times, please click the button below to view our schedule.
                   </p>
 

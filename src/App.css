@@ -444,6 +444,91 @@ a {
   max-width: 100ch;
 }
 
+/* ✅ Zone reservation — highlighted callout */
+.requirementAlert {
+  border: 2px solid #ff1f4f;
+  background: rgba(214, 0, 50, 0.16);
+  box-shadow: 0 0 0 4px rgba(214, 0, 50, 0.12);
+}
+
+.requirementAlert .requirementText {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.requirementAlertTitle {
+  margin: 0;
+  font-size: clamp(18px, 2.4vw, 22px);
+  font-weight: 800;
+  color: #fff;
+}
+
+.requiredBadge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #ffc531;
+  color: #1a1200;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* ✅ Gentle pulse to draw the eye to the zone button */
+.btnPulse {
+  animation: pulse 2s ease-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 31, 79, 0.6);
+  }
+  70%,
+  100% {
+    box-shadow: 0 0 0 12px rgba(255, 31, 79, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btnPulse {
+    animation: none;
+  }
+}
+
+/* ✅ Zone reservation — top-of-page banner */
+.zoneBanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  margin-bottom: 18px;
+  padding: 14px 18px;
+  border-radius: var(--radius);
+  border: 2px solid #ff1f4f;
+  background: rgba(214, 0, 50, 0.18);
+  box-shadow: 0 0 0 4px rgba(214, 0, 50, 0.12), var(--shadow);
+  text-align: center;
+  text-decoration: none;
+}
+
+.zoneBannerText {
+  line-height: 1.5;
+}
+
+.zoneBannerCta {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--red);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  font-weight: 900;
+  white-space: nowrap;
+  transition: opacity 0.12s ease;
+}
+
+.zoneBanner:hover .zoneBannerCta {
+  opacity: 0.85;
+}
+
 /* Bottom CTA */
 .bottomCta {
   margin-top: 26px;

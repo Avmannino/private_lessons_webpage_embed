@@ -40,6 +40,21 @@ export default function App() {
 
       <main className="main">
         <div className="container">
+          {/* ZONE RESERVATION ALERT */}
+          <a
+            className="zoneBanner"
+            href={ZONE_SIGNUP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="requiredBadge">Coaches</span>
+            <span className="zoneBannerText">
+              Every private lesson requires a <strong>reserved zone</strong> of ice. Book yours
+              before you arrive.
+            </span>
+            <span className="zoneBannerCta">Reserve Your Zone →</span>
+          </a>
+
           {/* QUICK INFO */}
           <section className="infoGrid" aria-label="Private lessons overview">
             <article className="infoCard">
@@ -159,14 +174,16 @@ export default function App() {
             <div className="requirementsInner">
               <h2 className="bottomTitle">Guest Coach &amp; Volunteer Requirements</h2>
 
-              <div className="requirementItem">
+              <div className="requirementItem requirementAlert">
+                <span className="requiredBadge">Required</span>
+                <p className="requirementAlertTitle">Coaches: Reserve Your Zone Before You Arrive</p>
                 <p className="requirementText">
                   All <strong>coaches</strong> must sign up for a <strong>"zone"</strong> (section of
                   ice) for their private lesson ice slot.
                 </p>
                 <p className="requirementText">Reserve your zone here:</p>
                 <a
-                  className="btn btnOutline btnCalendar"
+                  className="btn btnPrimary btnCalendar btnPulse"
                   href={ZONE_SIGNUP_URL}
                   target="_blank"
                   rel="noopener noreferrer"

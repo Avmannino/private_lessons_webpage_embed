@@ -8,6 +8,9 @@ const SCHEDULE_URL = "https://www.wingsarena.com/schedule";
 // ✅ Required documents
 const VOLUNTEER_WAIVER_URL = `${import.meta.env.BASE_URL}documents/volunteer-waiver.pdf`;
 
+// ✅ Coach ice zone sign-up
+const ZONE_SIGNUP_URL = "https://www.signupgenius.com/go/10C0548AEAF2FAAFCCE9-62694396-wings#/";
+
 export default function App() {
   return (
     <div className="page">
@@ -155,6 +158,22 @@ export default function App() {
           <section className="requirementsCard" aria-label="Guest coach and volunteer requirements">
             <div className="requirementsInner">
               <h2 className="bottomTitle">Guest Coach &amp; Volunteer Requirements</h2>
+
+              <div className="requirementItem">
+                <p className="requirementText">
+                  All <strong>coaches</strong> must sign up for a <strong>"zone"</strong> (section of
+                  ice) for their private lesson ice slot.
+                </p>
+                <p className="requirementText">Sign up for a zone here:</p>
+                <a
+                  className="btn btnOutline btnCalendar"
+                  href={ZONE_SIGNUP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Sign Up for a Zone
+                </a>
+              </div>
 
               <div className="requirementItem">
                 <p className="requirementText">

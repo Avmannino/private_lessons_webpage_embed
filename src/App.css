@@ -478,6 +478,19 @@ a {
   text-transform: uppercase;
 }
 
+/* ✅ Button with small caption under the label */
+.btnStacked {
+  flex-direction: column;
+  gap: 1px;
+}
+
+.btnSubtext {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  opacity: 0.75;
+}
+
 /* ✅ Gentle pulse to draw the eye to the zone button */
 .btnPulse {
   animation: pulse 2s ease-out infinite;
